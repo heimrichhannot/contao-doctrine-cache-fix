@@ -1,0 +1,26 @@
+{
+    "name": "heimrichhannot/contao-doctrine-cache-fix",
+    "type": "library",
+    "description": "Fix for the error \"Cannot use Riak\\Object as Object because 'Object' is a special class name\".",
+    "license": "LGPL-3.0-or-later",
+    "require": {
+        "php": "^7.2",
+        "contao/core-bundle": "^4.4",
+        "symfony/framework-bundle": "^3.4"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Doctrine\\Common\\Cache\\": "src/Doctrine/Common/Cache/"
+        },
+        "classmap": [
+            "src/"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
