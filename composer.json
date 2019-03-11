@@ -9,7 +9,10 @@
     },
     "autoload": {
         "psr-4": {
-            "": "src/"
-        }
+            "Doctrine\\Common\\Cache\\": "src/Doctrine/Common/Cache/"
+        },
+        "classmap": [
+            "src/"
+        ]
     }
 }
